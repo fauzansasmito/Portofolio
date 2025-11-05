@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak Fauzan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Fauzan As Shiddiq Sasmito</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTACT FORM -->
+  <section class="contact">
+    <h2>Form Request Project</h2>
+    <form>
+      <label for="nama">Nama Lengkap:</label>
+      <input type="text" id="nama" name="nama" placeholder="Masukkan nama kamu" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Masukkan email aktif" required>
+
+      <label for="layanan">Jenis Layanan:</label>
+      <select id="layanan" name="layanan" required>
+        <option value="">-- Pilih Layanan --</option>
+        <option value="website">Pembuatan Website</option>
+        <option value="uiux">Desain UI/UX</option>
+        <option value="konsultasi">Konsultasi Teknologi</option>
+      </select>
+
+      <label for="pesan">Deskripsi Proyek / Pesan:</label>
+      <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan detail proyek atau pesan kamu..." required></textarea>
+
+      <label>Urgensi:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="urgensi" value="biasa" required> Biasa</label>
+        <label><input type="radio" name="urgensi" value="mendesak"> Mendesak</label>
+      </div>
+
+      <label><input type="checkbox" required> Saya menyetujui syarat & ketentuan</label>
+
+      <button type="submit">Kirim Permintaan</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Fauzan As Shiddiq Sasmito | <a href="https://itpln.ac.id" target="_blank">ITPLN</a></p>
+  </footer>
+</body>
+</html>

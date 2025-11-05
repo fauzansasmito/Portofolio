@@ -1,0 +1,228 @@
+/* ======== Global Style ======== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0b3d2e; /* dark green */
+  color: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+/* ======== Header ======== */
+header {
+  background-color: #145c42;
+  padding: 1.5rem 0;
+  text-align: center;
+  border-bottom: 2px solid #1b704f;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.8rem;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+  background-color: #1b704f;
+}
+
+/* ======== Hero ======== */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.hero img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #1b704f;
+  margin-bottom: 1rem;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h2 {
+  font-size: 1.6rem;
+}
+
+/* ======== About ======== */
+.about {
+  background-color: #114a37;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+/* ======== Skills ======== */
+.skills {
+  background-color: #145c42;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.skill {
+  margin-bottom: 1rem;
+}
+
+.skill span {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.progress {
+  background: #0f3326;
+  border-radius: 25px;
+  overflow: hidden;
+  height: 22px;
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, #1b704f, #4ae3b5);
+  color: #fff;
+  text-align: center;
+  height: 100%;
+  line-height: 22px;
+  border-radius: 25px;
+  font-size: 0.85rem;
+  transition: width 1s ease;
+  animation: growBar 1.5s ease-out;
+}
+
+@keyframes growBar {
+  from { width: 0; }
+}
+
+/* ======== Footer ======== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #0f3326;
+  font-size: 0.9rem;
+  border-top: 2px solid #1b704f;
+}
+
+footer a {
+  color: #4ae3b5;
+}
+
+/* ======== Portfolio ======== */
+.portfolio {
+  max-width: 900px;
+  margin: 2rem auto;
+  background-color: #145c42;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  color: #f5f5f5;
+}
+
+th, td {
+  border: 1px solid #1b704f;
+  padding: 10px;
+}
+
+th {
+  background-color: #0f3326;
+}
+
+tr:nth-child(even) {
+  background-color: #114a37;
+}
+
+table a {
+  color: #4ae3b5;
+  text-decoration: underline;
+}
+
+/* ======== Contact Form ======== */
+.contact {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: #145c42;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+input, select, textarea {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: none;
+}
+
+.radio-group {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  background-color: #1b704f;
+  color: #fff;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #4ae3b5;
+  color: #0b3d2e;
+}
